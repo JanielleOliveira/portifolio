@@ -7,10 +7,9 @@
 :root {
   --blue-200: #abc7e2;
   --blue-500: #1e90ff;
-  --blue-800: #0c5775;
-  --gray-200: #e9ecef;
-  --gray-400: #bacfcf;
-  --black-800: #2e2e2e;
+  --blue-800: #0c7570;
+  --gray-400: #d9e7d9;
+  --black-800: #1f1d1d;
   --white: #f5f7fa;
 }
 
@@ -99,4 +98,43 @@ nav a:hover {
 #video figure {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--blue-800);
+  font-weight: bold;
+  text-align: center;
+}
+
+footer section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer img {
+  width: 2rem;
+  height:  2rem;
+  display: block;
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+footer img:hover {
+  filter: brightness(0)
+          saturate(100%)
+          invert(65%)
+          sepia(59%)
+          saturate(2437%)
+          hue-rotage(213deg)
+          brightness(86%)
+          contrast(88%)  
 }
