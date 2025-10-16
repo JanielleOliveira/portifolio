@@ -5,11 +5,11 @@
 }
 
 :root {
-  --blue-200: #a7c7e7;
+  --blue-200: #abc7e2;
   --blue-500: #1e90ff;
-  --blue-800: #0056b3;
+  --blue-800: #0c5775;
   --gray-200: #e9ecef;
-  --gray-400: #b9c6d1;
+  --gray-400: #bacfcf;
   --black-800: #2e2e2e;
   --white: #f5f7fa;
 }
@@ -46,4 +46,35 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+section {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+header {
+  background: var(--blue-800);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--blue-200);
 }
